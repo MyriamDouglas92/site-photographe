@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icons/camera.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styleportfolio.css" />
+    <title>Jean-Jacques Photos - Portfolio</title>
+  </head>
+  <body>
+    <!-- DEBUT HEADER  -->
+    <header>
+
+      <!-- Barre de navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Jean-Jacques Photos</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Actualités</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Prestations
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Tarifs</a></li>
+                  <li><a class="dropdown-item" href="#">Shootings</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- FIN HEADER  -->
+
+    <!-- DEBUT MAIN  -->
+    <main>
+      
+      <!-- Titre et paragraphe lead -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center">
+            <h1 class="div_titrePage">Portfolio</h1>
+            <p class="lead">
+              Bienvenue sur notre page Portfolio. Ici vous pourrez consulter nos
+              photographies par catégories thématiques en cliquant sur le lien
+              "Afficher photos par catégories". Si vous préférez les consulter
+              en totalité, veuillez cliquer sur "Afficher toutes les photos".
+              Vous avez la possibilité de sortir à tout moment et de revenir à
+              l'affichage standard sous forme de sliders en appuyant sur l'icône
+              de réduction en haut à droite des fenêtres. Si l'une ou plusieurs
+              de nos photographies devait vous intéresser, merci de nous laisser
+              un message via le formulaire de contact (lien :
+              <a href="/pagecontact.html">Contact</a>).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEBUT AFFICHAGE STANDARD -->
+      <!-- Sliders -->
+
+      <!-- Catégorie Faune & Flore -->
+      <div id="div_affichageSlider1" class="container none">
+        <div class="row">
+          <div class="col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center">
+            <h2 class="div_titresH2">Faune & flore</h2>
+
+            <!-- Slider Faune & Flore -->
+
+            <div
+              id="carouselExampleControls_1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/cat1-animaux/horse.jpeg" class="d-block w-100" alt="Tête de cheval" />
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/cat1-animaux/fleur_bleue.jpeg" class="d-block w-100" alt="Une fleur bleue" />
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/cat1-animaux/cerf.jpeg" class="d-block w-100" alt="Un cerf majestueux" />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="carouselExampleControls_1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="carouselExampleControls_1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Liens affichages photos catégorie Faune & Flore -->
+            <div class="div_affichage">
+              <div id="affichageSlidersCatFaune" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+              <div id="affichageSlidersGlobalFaune" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catégorie Architecture -->
+      <div id="div_affichageSlider2" class="container">
+        <div class="row">
+          <div class="col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center">
+            <h2 class="div_titresH2">Architecture</h2>
+
+            <!-- Slider Architecture -->
+            <div
+              id="carouselExampleControls_2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/img/cat2-architecture/skyscraper.jpeg"
+                    class="d-block w-100"
+                    alt="Gratte-ciels"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/img/cat2-architecture/Toronto.jpeg"
+                    class="d-block w-100"
+                    alt="La ville de Toronto"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/img/cat2-architecture/Tower_Bridge.jpeg"
+                    class="d-block w-100"
+                    alt="Le Tower Bridges à Londres"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="carouselExampleControls_2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="carouselExampleControls_2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Liens affichages photos catégorie Architecture -->
+            <div class="div_affichage">
+              <div id="affichageSlidersCatArchitec" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+              <div
+                id="affichageSlidersGlobalArchitec"
+                class="div_liensAffichage"
+              >
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catégorie Paysages -->
+      <div class="container">
+        <div class="row">
+          <div class="col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center">
+            <h2 class="div_titresH2">Paysages</h2>
+
+            <!-- Slider Paysages -->
+            <div
+              id="carouselExampleControls_3"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/img/cat3-paysage/iguazu.jpeg"
+                    class="d-block w-100"
+                    alt="Chutes d'Iguazu"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/img/cat3-paysage/Foret_vierge.jpeg"
+                    class="d-block w-100"
+                    alt="Forêt vierge"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/img/cat3-paysage/Mt_St_Michel.jpeg"
+                    class="d-block w-100"
+                    alt="Le Mont St-Michel de nuit"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="carouselExampleControls_3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="carouselExampleControls_3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Liens affichages photos catégorie Paysages -->
+            <div class="div_affichage">
+              <div id="affichageSlidersCatPaysages" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+              <div
+                id="affichageSlidersGlobalPaysages"
+                class="div_liensAffichage"
+              >
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEBUT AFFICHAGE PHOTOS PAR CATEGORIES -->
+
+      <!-- Catégorie Faune & Flore -->
+
+      <div id="div_catFaune" class="container">
+        <div class="row">
+          <div class="col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center">
+            <h2 class="div_titresH2">Faune & flore</h2>
+
+            <!-- Liens affichages photos global Faune & flore -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalFaune1" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+
+            <!-- Bouton réduction retour affichage sliders -->
+            <div id="div_btnReducFaune" class="div_btn">
+              <input class="div_btnReduire" type="button" value="-" />
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/koala.jpeg"
+                      class="card-img-top"
+                      alt="Mère koala et son petit"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Koalas</h5>
+                      <p class="card-text">Mère koala et son petit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/tournesols.jpeg"
+                      class="card-img-top"
+                      alt="Champ de tournesols"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tournesols</h5>
+                      <p class="card-text">Champ de tournesols</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/fleurs.jpeg"
+                      class="card-img-top"
+                      alt="Fleurs type tulipes"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Fleurs</h5>
+                      <p class="card-text">Fleurs type tulipes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/horse.jpeg"
+                      class="card-img-top"
+                      alt="Tête de cheval"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cheval</h5>
+                      <p class="card-text">Tête de cheval</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/cerf.jpeg"
+                      class="card-img-top"
+                      alt="Un cerf majestueux"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cerf</h5>
+                      <p class="card-text">Cerf regardant devant lui</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/fleur_bleue.jpeg"
+                      class="card-img-top"
+                      alt="Une fleur bleue"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Fleur bleue</h5>
+                      <p class="card-text">Une fleur bleue</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liens affichages photos global Paysage -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalFaune2" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catégorie Architecture -->
+
+      <div id="div_catArchitect" class="container">
+        <div class="row">
+          <div
+            class="col col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center"
+          >
+            <h2 class="div_titresH2">Architecture</h2>
+
+            <!-- Liens affichages photos global Architecture -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalArchitec1" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+
+            <!-- Bouton réduction retour affichage sliders -->
+            <div id="div_btnReducArchitec" class="div_btn">
+              <input class="div_btnReduire" type="button" value="-" />
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Toronto.jpeg" class="card-img-top" alt="Toronto de nuit" />
+                    <div class="card-body">
+                      <h5 class="card-title">Toronto</h5>
+                      <p class="card-text">Toronto de nuit avec vue sur la tour</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/tour_Londres.jpeg" class="card-img-top" alt="Tour de Londres" />
+                    <div class="card-body">
+                      <h5 class="card-title">Tour de Londres</h5>
+                      <p class="card-text">Ancien donjon de la ville de Londres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/WTC_NewYork.jpeg" class="card-img-top" alt="One WTC à New York" />
+                    <div class="card-body">
+                      <h5 class="card-title">One World Trade Center</h5>
+                      <p class="card-text">Le One WTC à New York</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Fatehpur_Sikri.jpeg" class="card-img-top" alt="Fatehpur Sikri en Inde" />
+                    <div class="card-body">
+                      <h5 class="card-title">La Buland Darwaza à Fatehpur Sikri</h5>
+                      <p class="card-text">La Buland Darwaza (Sublime Porte) dans la ville fantôme de Fatehpur Sikri (Inde)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Kuala_Lumpur.jpeg" class="card-img-top" alt="Kuala Lumpur" />
+                    <div class="card-body">
+                      <h5 class="card-title">Kuala Lumpur</h5>
+                      <p class="card-text">La ville de Kuala Lumpur (Malaisie) vue de nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Castle_moon.jpeg" class="card-img-top" alt="Château féérique avec croissant de lune" />
+                    <div class="card-body">
+                      <h5 class="card-title">Château féerique</h5>
+                      <p class="card-text">Un château Disneyland avec croissant de lune dans le ciel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liens affichages photos global Architecture -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalArchitec2" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Catégorie Paysages -->
+
+      <div id="div_catPaysage" class="container">
+        <div class="row">
+          <div
+            class="col col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center"
+          >
+            <h2 class="div_titresH2">Paysages</h2>
+
+            <!-- Liens affichages photos global Paysage -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalPaysage1" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+
+            <!-- Bouton réduction retour affichage sliders -->
+            <div id="div_btnReducPaysage" class="div_btn">
+              <input class="div_btnReduire" type="button" value="-" />
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/iguazu.jpeg" class="card-img-top" alt="Chutes d'Iguazu" />
+                    <div class="card-body">
+                      <h5 class="card-title">Chutes d'Iguazu</h5>
+                      <p class="card-text">Chutes d'eau du fleuve Iguazu (Argentine-Brésil)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Sahara.jpeg" class="card-img-top" alt="Dunes du Sahara" />
+                    <div class="card-body">
+                      <h5 class="card-title">Sahara</h5>
+                      <p class="card-text">Paysage de dunes sahariennes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Myrland_Norway.jpeg" class="card-img-top" alt="Myrland en Norvège" />
+                    <div class="card-body">
+                      <h5 class="card-title">Myrland</h5>
+                      <p class="card-text">Paysage et aurore boréale à Myrland (Norvège)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Mt_St_Michel.jpeg" class="card-img-top" alt="Le Mont St Michel de nuit " />
+                    <div class="card-body">
+                      <h5 class="card-title">Mont St-Michel</h5>
+                      <p class="card-text">Le Mont St-Michel vu de nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Foret_vierge.jpeg" class="card-img-top" alt="Forêt vierge" />
+                    <div class="card-body">
+                      <h5 class="card-title">Forêt vierge</h5>
+                      <p class="card-text">Une forêt vierge et humide en Asie</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Kaapa_USA.jpeg" class="card-img-top" alt="Kapa'a à Hawaï " />
+                    <div class="card-body">
+                      <h5 class="card-title">Kapa'a</h5>
+                      <p class="card-text">Paysage de la ville de Kapa'a à Hawaï</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Liens affichages photos global Paysage -->
+            <div class="div_affichage">
+              <div id="affichageCatGlobalPaysage2" class="div_liensAffichage">
+                Afficher toutes les photos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN AFFICHAGE PHOTOS PAR CATEGORIES -->
+
+      <!-- DEBUT AFFICHAGE PHOTOS GLOBAL -->
+
+      <div id="div_affichageGlobal" class="container">
+        <div class="row">
+          <div
+            class="col col col-ms-12 col-s-12 col-lg-12 col-xl-12 text-center"
+          >
+            <h2 class="div_titresH2">Toutes nos photographies</h2>
+
+            <!-- Lien affichage photos Catégorie Faune -->
+            <div class="div_affichage">
+              <div id="affichageGlobal_catFaune" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+            </div>
+
+            <!-- Bouton réduction retour affichage sliders -->
+            <div id="div_btnReducAffichageGlobal" class="div_btn">
+              <input class="div_btnReduire" type="button" value="-" />
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/koala.jpeg"
+                      class="card-img-top"
+                      alt="Mère koala et son petit"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Koalas</h5>
+                      <p class="card-text">Mère koala et son petit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/tournesols.jpeg"
+                      class="card-img-top"
+                      alt="Champ de tournesols"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tournesols</h5>
+                      <p class="card-text">Champ de tournesols</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/fleurs.jpeg"
+                      class="card-img-top"
+                      alt="Fleurs type tulipes"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Fleurs</h5>
+                      <p class="card-text">Fleurs type tulipes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/horse.jpeg"
+                      class="card-img-top"
+                      alt="Tête de cheval"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cheval</h5>
+                      <p class="card-text">Tête de cheval</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/cerf.jpeg"
+                      class="card-img-top"
+                      alt="Un cerf majestueux"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Cerf</h5>
+                      <p class="card-text">Cerf regardant devant lui</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosFaune">
+                  <div class="card text-center" style="width: 18rem">
+                    <img
+                      src="/img/cat1-animaux/fleur_bleue.jpeg"
+                      class="card-img-top"
+                      alt="Une fleur bleue"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Fleur bleue</h5>
+                      <p class="card-text">Une fleur bleue</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Lien affichage photos Catégorie Architecture -->
+            <div class="div_affichage">
+              <div id="affichageGlobal_catFArchitec" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Toronto.jpeg" class="card-img-top" alt="Toronto de nuit" />
+                    <div class="card-body">
+                      <h5 class="card-title">Toronto</h5>
+                      <p class="card-text">Toronto de nuit avec vue sur la tour</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/tour_Londres.jpeg" class="card-img-top" alt="Tour de Londres" />
+                    <div class="card-body">
+                      <h5 class="card-title">Tour de Londres</h5>
+                      <p class="card-text">Ancien donjon de la ville de Londres</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/WTC_NewYork.jpeg" class="card-img-top" alt="One WTC à New York" />
+                    <div class="card-body">
+                      <h5 class="card-title">One World Trade Center</h5>
+                      <p class="card-text">Le One WTC à New York</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Fatehpur_Sikri.jpeg" class="card-img-top" alt="Fatehpur Sikri en Inde" />
+                    <div class="card-body">
+                      <h5 class="card-title">La Buland Darwaza à Fatehpur Sikri</h5>
+                      <p class="card-text">La Buland Darwaza (Sublime Porte) dans la ville fantôme de Fatehpur Sikri (Inde)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Kuala_Lumpur.jpeg" class="card-img-top" alt="Kuala Lumpur" />
+                    <div class="card-body">
+                      <h5 class="card-title">Kuala Lumpur</h5>
+                      <p class="card-text">La ville de Kuala Lumpur (Malaisie) vue de nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosArchitect">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat2-architecture/Castle_moon.jpeg" class="card-img-top" alt="Château féérique avec croissant de lune" />
+                    <div class="card-body">
+                      <h5 class="card-title">Château féerique</h5>
+                      <p class="card-text">Un château Disneyland avec croissant de lune dans le ciel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Liens affichages photos Catégorie Paysages -->
+            <div class="div_affichage">
+              <div id="affichageGlobal_catPaysages" class="div_liensAffichage">
+                Afficher photos par catégories
+              </div>
+            </div>
+
+            <!-- Première rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/iguazu.jpeg" class="card-img-top" alt="Chutes d'Iguazu" />
+                    <div class="card-body">
+                      <h5 class="card-title">Chutes d'Iguazu</h5>
+                      <p class="card-text">Chutes d'eau du fleuve Iguazu (Argentine-Brésil)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Sahara.jpeg" class="card-img-top" alt="Dunes du Sahara" />
+                    <div class="card-body">
+                      <h5 class="card-title">Sahara</h5>
+                      <p class="card-text">Paysage de dunes sahariennes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Myrland_Norway.jpeg" class="card-img-top" alt="Myrland en Norvège" />
+                    <div class="card-body">
+                      <h5 class="card-title">Myrland</h5>
+                      <p class="card-text">Paysage et aurore boréale à Myrland (Norvège)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seconde rangée de photos -->
+            <div class="row">
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Mt_St_Michel.jpeg" class="card-img-top" alt="Le Mont St Michel de nuit " />
+                    <div class="card-body">
+                      <h5 class="card-title">Mont St-Michel</h5>
+                      <p class="card-text">Le Mont St-Michel vu de nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Foret_vierge.jpeg" class="card-img-top" alt="Forêt vierge" />
+                    <div class="card-body">
+                      <h5 class="card-title">Forêt vierge</h5>
+                      <p class="card-text">Une forêt vierge et humide en Asie</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-ms-12 col-s-12 col-lg-4 col-xl-4">
+                <div class="div_cardsPhotosPaysage">
+                  <div class="card text-center" style="width: 18rem">
+                    <img src="/img/cat3-paysage/Kaapa_USA.jpeg" class="card-img-top" alt="Kapa'a à Hawaï " />
+                    <div class="card-body">
+                      <h5 class="card-title">Kapa'a</h5>
+                      <p class="card-text">Paysage de la ville de Kapa'a à Hawaï</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FIN AFFICHAGE PHOTOS GLOBAL -->
+
+    </main>
+    <!-- FIN MAIN -->
+
+    <!-- DEBUT FOOTER -->
+    <footer class="footer">
+      <!-- div container pour réseaux sociaux -->
+      <div class="containerReseauxSociaux">
+        <a href="https://fr-fr.facebook.com/"
+          ><img src="./img/icons/facebook.svg" alt="lien facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="./img/icons/instagram.svg" alt="lien instagram"
+        /></a>
+        <a href="https://fr.linkedin.com/"
+          ><img src="./img/icons/linkedin.svg" alt="lien linkedin"
+        /></a>
+        <a href="https://twitter.com/"
+          ><img src="./img/icons/twitter.svg" alt="lien twitter"
+        /></a>
+      </div>
+      <hr class="separateurReseauxSociaux" />
+      <!-- div container pour mentions légales -->
+      <div class="containerMentionsLeg">
+        <div>
+          <a href="https://www.legalplace.fr/guides/mentions-legales/"
+            >Mentions légales |</a
+          >
+        </div>
+        <hr />
+        <div><a class="footerContact" href="">Contact</a></div>
+      </div>
+      <!-- div container pour date de création site et licence -->
+      <div class="containerLicence">
+        <p>Copyright © 2021 - Jean-Jacques Photographie</p>
+      </div>
+    </footer>
+    <!-- FIN MAIN -->
+
+    <script
+      src="https://kit.fontawesome.com/d0eee9d9c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/portfolio.js"></script>
+  </body>
+</html>

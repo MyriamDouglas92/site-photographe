@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("img/background/towel.png");
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+  a {
+    color: white;
+  }
+
+  /** Style Header **/
+
+  /** Style Main **/
+
+  .div_titrePage{
+      color: #ffffff;
+      font-size: 1.75rem;
+      font-family: 'Abril Fatface, cursive';
+  }
+
+  .lead{
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface, cursive';
+  }
+
+  .div_liensAffichage {
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+/* Containers affichages catégories */
+
+  #div_catFaune {
+    display: none;
+  }
+
+  #div_catArchitect {
+    display: none;
+  }
+
+  #div_catPaysage {
+    display: none;
+  }
+
+/* Containers affichage global */
+
+  #div_affichageGlobal {
+    display: none;
+  }
+
+/** Style Footer **/
+/* Container footer */
+
+footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px #ffffff;
+  }
+
+  /* Container réseaux sociaux */
+  .containerReseauxSociaux {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+  }
+
+  footer .containerReseauxSociaux img {
+    width: 20px;
+    margin-top: 10px;
+  }
+
+  footer .separateurReseauxSociaux {
+    display: flex;
+    width: 75%;
+    border: solid 0.5px rgb(255, 255, 255);
+  }
+
+  /* Container mentions légales */
+  .containerMentionsLeg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 16%;
+  }
+  
+  .containerMentionsLeg div a {
+    font-size: x-small;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .containerMentionsLeg div {
+    margin-top: 3%;
+  }
+  
+  .containerMentionsLeg hr {
+    height: 20px;
+  }
+  
+  /* container licence */
+  .containerLicence {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  /* Image dans footer/container licence */
+  .containerLicence img {
+    width: 10px;
+    margin-right: 5px;
+  }
+
+  /* text footer / dans container licence */
+  .containerLicence p {
+    font-size: xx-small;
+    display: flex;
+    color: #ffffff;
+  }

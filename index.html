@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/icons/camera.png">
+    <link rel="stylesheet" href="style.css">
     <title>Jean Jacques Photos</title>
 </head>
 <body>
@@ -136,28 +135,88 @@ Je suis basé en <strong>Haute-Savoie</strong>, où mon <strong>amour pour le pl
             </section>
         </div>
     
+
+    <!-- formulaire avec un titre et sous-titre avec 4 inputs pour information et 1 pour commentaire -->
+    <div class="formuler">
+      <!-- cette balise contient toutes les balises pour notre formulaire -->
+      <form action="">
+        <!-- cette balise contient titre et sous titre -->
+        <div class="titre">
+          <h1>CONTACT</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus error
+          </p>
+        </div>
+
+        <!-- cette balise contien les listes (labels et inputs) -->
+        <div class="inputFormulair">
+          <ol>
+            <li>
+              <input type="text" placeholder="nom" />
+            </li>
+            <li>
+              <input type="text" placeholder="0700000000" />
+            </li>
+            <li>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="contact@gmail.com"
+              />
+            </li>
+            <li>
+              <textarea
+                name="commenter"
+                id="commenter"
+                rows="6"
+                placeholder="Vous avez déjà une idée précise de votre print ? Envoyez moi les détails ici !
+Vous avez besoin de conseils ? Je suis là pour ça, posez-moi votre question ici!"
+              ></textarea>
+            </li>
+            <li>
+              <p>
+                Données déclarées à la CNIL. Conformément aux articles 38 et 40 de la loi du 6 janvier 1978,
+                vous disposez d’un droit d’accès, de modification, de rectification et de suppression des données vous concernant. 
+
+               Vos données sont protégées et réservées à l'usage de Mamzelle Bulle Studio Paris.
+              </p>
+            </li>
+            <li>
+              <!-- bouton Envoyer -->
+              <button class="button">ENVOYER</button>
+            </li>
+          </ol>
+        </div>
+      </form>
+    </div>
+    <!-- crée un footer qui contient une partie réseaux sociaux, une partie de mentions légales et contact une partie licence et date  -->
+
     <!-- Place du footer  -->
 
     <!-- crée une footer qui contier une partie de reseux sosieux, une partie de montion égal et contact une partie lisance et date  -->
-    <footer class="footer">
-      <!-- div coniner pour réseaux socieau -->
-      <div class="continerReseauxsociaux ">
-      <a href="#"><img src="./img/icons/facebook.svg" alt="lien facebook"></a>
-      <a href="#"><img src="./img/icons/instagram.svg" alt="lien instagram"></a>
-      <a href="#"><img src="./img/icons/linkedin (1).svg" alt="lien linkedin"></a>
-      <a href="#"><img src="./img/icons/twitter(1).svg" alt="lien twitter"></a>
 
+    <footer class="footer">
+      <!-- div container pour réseaux sociaux -->
+      <div class="containerReseauxSociaux">
+      <a href="https://fr-fr.facebook.com/"><img src="./img/icons/facebook.svg" alt="lien facebook"></a>
+      <a href="https://www.instagram.com/"><img src="./img/icons/instagram.svg" alt="lien instagram"></a>
+      <a href="https://fr.linkedin.com/"><img src="./img/icons/linkedin.svg" alt="lien linkedin"></a>
+      <a href="https://twitter.com/"><img src="./img/icons/twitter.svg" alt="lien twitter"></a>
     </div>
-      <hr class="separataurReseauxSocieaux">
-      <!-- div continer pour montion égal -->
-      <div class="continerMontionEgal">
+      <hr class="separateurReseauxSociaux">
+      <!-- div container pour mentions légales -->
+      <div class="containerMentionsLeg">
         <div><a href="">Mentions légales</a></div>
         <hr>
-        <div> <a class="footerContact" href="">contact</a></div>  
+        <div> <a class="footerContact" href="">Contact</a></div>  
       </div>
-      <!-- div coniner pour date de cration site et lisanc -->
-      <div class="continerLisanc"><p>Copyright © 2021 - Jean-Jacques Photographie</p></div>
+      <!-- div container pour date de création site et licence -->
+      <div class="containerLicence"><p>Copyright © 2021 - Jean-Jacques Photographie</p></div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/d0eee9d9c2.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
   </body>
   </main>
