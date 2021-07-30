@@ -1,0 +1,858 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("img/background/towel.png");
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  /* barre de navigation en flex
+  contient h1 et menu burger */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px;
+    background: #333333;
+    border-bottom: 2px solid white;
+  }
+  /* "Jean Jacques */
+  nav h1{
+    font-family: 'Abril Fatface', cursive;
+  }
+  
+  nav h1 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: normal;
+    color: white;
+    white-space: nowrap;
+  }
+  
+  .navmenu {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* menu burger */
+  nav img {
+    height: 50%;
+    color: white;
+  }
+  
+  nav a {
+    display: none;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .citation {
+    margin: 0 auto 10px;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    background: #333333;
+    padding: 20px;
+  }
+  
+  main {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    width: 100%;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    gap: 40px;
+  }
+  
+  .slider {
+    aspect-ratio: 16 / 9;
+    width: 75%;
+    box-shadow: 5px 5px 5px rgb(36, 36, 36);
+    align-self: center;
+    background: black;
+  }
+  
+  .slider input {
+    display: none;
+  }
+  .cadre {
+   overflow: hidden;
+   border: 2px solid black;
+   overflow: hidden;
+   border: 2px solid black;
+   margin: 0;
+  }
+  
+  .container {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition-duration: 1000ms;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+  }
+  
+  img {
+    display: block;
+  }
+  
+  .slideimg {
+    position: relative;
+    width: 100%;
+  }
+  
+  .slideimg p {
+    position: absolute;
+    bottom: 0;
+    background: rgb(151, 147, 147);
+  }
+  
+  .slideimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .slideimg label {
+    background: rgba(185, 185, 185, 0.5);
+    border-radius: 50%;
+  }
+  
+  .pre {
+   z-index: 2;
+   position: absolute;
+   top: 40%;
+   left: 0;
+   transform: scale(0.6);
+  }
+  .nxt {
+   z-index: 2;
+   position: absolute;
+   top: 40%;
+   right: 0;
+   transform: scale(0.6);
+  }
+  
+  #i1:checked ~ .cadre .container {
+    transform: translate(0);
+  }
+  #i2:checked ~ .cadre .container {
+    transform: translate(-33.3333333333333%);
+  }
+  #i3:checked ~ .cadre .container {
+    transform: translate(-66.666666666666%);
+  }
+  
+  /* Paragraphe de Présentation*/
+  .presentation {
+    width: 30%;
+    margin: 0;
+    text-align: justify;
+    /* background: #33333327;
+      
+      border: 1px solid white;
+      
+      box-shadow: 5px 5px 10px rgb(36, 36, 36); */
+    line-height: 150%;
+    background: #333333;
+    padding: 10px;
+  }
+  
+  /* Prestations / Etapes pour commande*/
+  #titreprestations {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .presta {
+    margin: 120px auto 0px;
+    background: #333333;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  .prestations {
+    list-style-type: none;
+    counter-reset: item;
+    font-size: 150%;
+  }
+  
+  .etape {
+    counter-increment: item;
+  }
+  
+  .etape:before {
+    display: inline-block;
+    content: counter(item);
+    background: lightblue;
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    margin-right: 2%;
+    padding: 1%;
+    background-color: white;
+    color: #333333;
+  }
+  
+  #details {
+    margin-left: 6%;
+    text-decoration: underline;
+  }
+  
+  #moredetails {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Catégories */
+  .categories {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .categories section {
+    padding-top: 60px;
+  }
+  
+  .categories h2 {
+    text-align: center;
+  }
+  
+  /* images en display block pour qu'elles rentrent bien 
+  pile dans la box */
+  .categories img {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto 100px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid white;
+  }
+  
+  .architecture {
+    background: #333333;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  /*------------------------------------------------------ rouhullah */
+  
+  /* -------------------------------------------- font dans formulair */
+  /* style font pour premier titre dans formuler */
+  .titre h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 30px;
+  }
+  
+  /* style font pour saus titre dans formuler */
+  .titre p {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* -------------------------------------------- style globale formulair */
+  /* div principale de formuler */
+  .formuler {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* balis formuler */
+  .formuler form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* div pour titr et saus titre */
+  .titre {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: aliceblue;
+  }
+  
+  /* balis input qui contier les list et dans list on a les labels et inputes */
+  .formuler .inputFormulair {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    color: aliceblue;
+  }
+  
+  /* taille liste dans formulair */
+  .formuler .inputFormulair ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* input style formulair */
+  .inputFormulair ol li input {
+    border: solid 1px #dbdbdb;
+    padding: 5px;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 3px;
+  }
+  /* style input qui prendre information dans formuler action hover */
+  .inputFormulair ol li input:hover {
+    background-color: #d2e7e7;
+    border: solid 1px rgb(90, 90, 90);
+  }
+  
+  /* balis li pour formuler */
+  .inputFormulair li {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* balise commenter dans formulair */
+  .inputFormulair ol li textarea {
+    padding: 5px;
+    border: solid 0.5px #c4c4c4;
+    width: 90%;
+    transition-duration: 0.4s;
+  }
+  /* style input commenter dans formuler action hover */
+  .inputFormulair ol li textarea:hover {
+    background-color: #d2e7e7;
+    border: solid 1px rgb(90, 90, 90);
+  }
+  .inputFormulair ol li textarea::placeholder {
+    font-size: x-small;
+  }
+  
+  /* style text dans formulair avant le button */
+  .inputFormulair ol li p {
+    font-size: xx-small;
+    width: 92%;
+  }
+  
+  /* style button qui est dans formulair */
+  
+  .button {
+    border: solid 1px #707070;
+    border-radius: 5px;
+    padding: 2%;
+    width: 31%;
+    max-width: 31%;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+    background-color: #4a534c;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  /* action button dans formulair */
+  .button:hover {
+    background-color: rgb(44, 44, 44);
+  }
+  
+  ::placeholder {
+    color: #8f8f8f;
+  }
+  /* --------------------------------------- rouhullah */
+  /* footer style */
+  /* contier de mon footer */
+  footer {
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid 1px #ffffff;
+  }
+  /* continer de mon reseaux socieux */
+  .continerReseauxsociaux {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+  }
+  footer .continerReseauxsociaux img {
+    width: 20px;
+    margin-top: 10px;
+  }
+  footer .separataurReseauxSocieaux {
+    display: flex;
+    width: 75%;
+    border: solid 0.5px rgb(255, 255, 255);
+  }
+  /* continer de montion égal */
+  .continerMontionEgal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 16%;
+  }
+  
+  .continerMontionEgal div a {
+    font-size: x-small;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .continerMontionEgal div {
+    margin-top: 3%;
+  }
+  
+  .continerMontionEgal hr {
+    height: 20px;
+  }
+  
+  /* continer de lisanc */
+  .continerLisanc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+  /* image dans footer/continer lisanc */
+  .continerLisanc img {
+    width: 10px;
+    margin-right: 5px;
+  }
+  /* text footer / dans continer lisanc */
+  .continerLisanc p {
+    font-size: xx-small;
+    display: flex;
+    color: #ffffff;
+  }
+  
+  /* ----------------------------------------rouhullah */
+  /* version iPad */
+  @media screen and (max-width: 768px) and (min-width: 414px) {
+    /* div principale de formuler */
+    .formuler {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    /* balis formuler */
+    .formuler form {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /* div pour titr et saus titre */
+    .titre {
+      width: 80%;
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: aliceblue;
+    }
+  
+    /* balis input qui contier les list et dans list on a les labels et inputes */
+    .formuler .inputFormulair {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      color: aliceblue;
+    }
+  
+    /* taille liste dans formulair */
+    .formuler .inputFormulair ol {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    /* input style formulair */
+    .inputFormulair ol li input {
+      border: solid 1px #dbdbdb;
+      width: 95%;
+      max-width: 95%;
+      padding: 5px;
+      border-radius: 3px;
+      transition-duration: 0.4s;
+    }
+  
+    /* style input qui prendre information dans formuler action hover */
+    .inputFormulair ol li input:hover {
+      background-color: #d2e7e7;
+      border: solid 1px rgb(90, 90, 90);
+    }
+  
+    /* balis li pour formuler */
+    .inputFormulair li {
+      list-style: none;
+    }
+  
+    /* balise commenter dans formulair */
+    .inputFormulair ol li textarea {
+      padding: 5px;
+      border: solid 1px #c4c4c4;
+      box-shadow: inset 0 1px 1px #b6b6b61a, 0 0 0 1px #b4b4b4,
+        0.1em 0.1em 1em #cacaca4d;
+      width: 95%;
+      max-width: 95%;
+    }
+  
+    /* style button qui est dans formulair */
+    /* style input commenter dans formuler action hover */
+    .inputFormulair ol li textarea:hover {
+      background-color: #d2e7e7;
+      border: solid 1px rgb(90, 90, 90);
+    }
+    .button {
+      border: solid 1px #707070;
+      border-radius: 5px;
+      padding: 10px;
+      width: 31%;
+      max-width: 31%;
+      font-family: "Montserrat", sans-serif;
+      color: aliceblue;
+      background-color: #4a534c;
+  
+      transition-duration: 0.4s;
+    }
+  
+    /* action button dans formulair */
+    .button:hover {
+      background-color: rgb(44, 44, 44);
+    }
+    ::placeholder {
+      color: #8f8f8f;
+    }
+  }
+  
+  /* version téléphon */
+  @media screen and (max-width: 413px) {
+    /* div principale de formuler */
+    .formuler {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    /* balis formuler */
+    .formuler form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* div pour titr et saus titre */
+    .titre {
+      width: 90%;
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: aliceblue;
+    }
+    /* balis input qui contier les list et dans list on a les labels et inputes */
+    .formuler .inputFormulair {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: aliceblue;
+    }
+  
+    /* input style formulair */
+    .inputFormulair ol li input {
+      border: solid 1px #dbdbdb;
+      width: 95%;
+      max-width: 95%;
+      padding: 5px;
+      border-radius: 3px;
+    }
+  
+    .formuler .inputFormulair ol {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* balis input qui contier les list et dans list on a les labels et inputes */
+    .formuler .inputFormulair {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: aliceblue;
+    }
+  
+    /* balis li pour formuler */
+    .inputFormulair li {
+      list-style: none;
+    }
+  
+    /* balise commenter dans formulair */
+    .inputFormulair ol li textarea {
+      padding: 5px;
+      border: solid 1px #c4c4c4;
+  
+      width: 95%;
+      max-width: 95%;
+    }
+  
+    /* style button qui est dans formulair */
+  
+    .button {
+      border: solid 1px #707070;
+      border-radius: 5px;
+      padding: 10px;
+      width: 31%;
+      max-width: 31%;
+      font-family: "Montserrat", sans-serif;
+      color: aliceblue;
+      background-color: #4a534c;
+    }
+    footer .continerReseauxsociaux {
+      width: 43%;
+    }
+  
+    .continerMontionEgal {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 43%;
+    }
+  }
+  ol {
+    padding: 0;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .categories {
+      flex-direction: row;
+    }
+    .architecture {
+      background: none;
+      border: none;
+    }
+    .formuler {
+      background: #333333;
+      border-top: 2px solid white;
+  
+      border-bottom: 2px solid white;
+  
+      border-bottom: 2px solid white;
+    }
+    .menu {
+      display: none;
+    }
+    nav {
+      justify-content: space-evenly;
+    }
+    nav a {
+      display: inline;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .slider {
+      width: 100%;
+      height: 50%;
+    }
+    .wrapper {
+      display: block;
+    }
+    .presentation {
+      width: 80%;
+      margin: 40px auto;
+    }
+    .pre, .nxt {
+      transform: scale(0.4);
+      top: 35%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .pre, .nxt {
+      transform: scale(0.3);
+      top: 20%;
+    }
+    .pre {
+      left: -10%;
+    }
+    .nxt {
+      right: -10%;
+    }
+  }
+  
+  
+  
+  .appear
+  {
+    display: block;
+  }
+  
+  #d1
+  {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    color: white;
+    font-size: 20px;
+    
+    
+    
+  }
+  
+  
+  
+
+ .NomFormulaire
+ {
+     margin-left: 109px;
+     margin-top: 15px;
+     margin-bottom: 25px;
+     width: 450px;
+ } 
+
+ .PrenomFormulaire
+ {
+     margin-bottom: 25px;
+     margin-left: 89px;
+     width: 450px;
+ }
+
+ .ChampEmail
+ {
+     margin-bottom: 25px;
+     width: 450px;
+     margin-left: 108px;
+ }
+
+ .NumPortable
+ {
+     margin-bottom: 25px;
+     width: 450px;
+ }
+
+ .LeMessage
+ {
+    margin-bottom: 25px;
+    width: 450px;
+    margin-left: 83px;
+    height: 80px; 
+ }
+
+.RetourEnHaut
+{
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    
+    
+    
+}
+
+.paragraphe{
+    text-align: center;
+    font-size: small;
+}
+
+.navbar-brand
+{
+    font-weight: bold;
+}
+
+
+.navbar.navbar-expand-lg.navbar-light.bg-light
+{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.nav-item
+{
+    margin-left: 20px;
+}
+
+.nav-link.active
+{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@media (max-width:800px){
+
+  .NomFormulaire{
+    font-size: medium;
+    height: auto;
+    
+  }
+}
+
+
+@media (max-width:800px){
+
+  .PrenomFormulaire{
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width:800px){
+
+  .ChampEmail{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width:800px){
+
+  .NumPortable{
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width:800px){
+
+  .LeMessage{
+    flex-direction: column;
+    height: auto;
+  }
+}
