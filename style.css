@@ -386,44 +386,44 @@ footer {
   border-top: solid 1px #ffffff;
 }
 /* continer de mon reseaux socieux */
-.continerReseauxsociaux {
+.containerReseauxSociaux {
   display: flex;
   justify-content: space-around;
   width: 15%;
 }
-footer .continerReseauxsociaux img {
+footer .containerReseauxSociaux img {
   width: 20px;
   margin-top: 10px;
 }
-footer .separataurReseauxSocieaux {
+footer .separateurReseauxSociaux {
   display: flex;
   width: 75%;
   border: solid 0.5px rgb(255, 255, 255);
 }
 /* continer de montion égal */
-.continerMontionEgal {
+.containerMentionsLeg {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 16%;
 }
 
-.continerMontionEgal div a {
+.containerMentionsLeg div a {
   font-size: x-small;
   color: #ffffff;
   text-decoration: none;
 }
 
-.continerMontionEgal div {
+.containerMentionsLeg div {
   margin-top: 3%;
 }
 
-.continerMontionEgal hr {
+.containerMentionsLeg hr {
   height: 20px;
 }
 
 /* continer de lisanc */
-.continerLisanc {
+.containerLicence {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -431,12 +431,12 @@ footer .separataurReseauxSocieaux {
   margin-bottom: 2%;
 }
 /* image dans footer/continer lisanc */
-.continerLisanc img {
+.containerLicence img {
   width: 10px;
   margin-right: 5px;
 }
 /* text footer / dans continer lisanc */
-.continerLisanc p {
+.containerLicence p {
   font-size: xx-small;
   display: flex;
   color: #ffffff;
